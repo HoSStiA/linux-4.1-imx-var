@@ -82,9 +82,9 @@
 #endif
 	};
 
-	wlcore {
+wlcore {
 		compatible = "wlcore", "ti,wl1831";
-		gpio = <177>;   /* The wl8 driver expects gpio to be an integer, so gpio6_17 is (6-1)*32+17=207
+		gpio = <177>;   /* The wl8 driver expects gpio to be an integer, so gpio6_17 is (6-1)*32+17=177
 		        	   irq property must not be set as driver derives irq number from gpio if no irq set
 	 			   use edge irqs for suspend/resume */
 		platform-quirks = <1>;
